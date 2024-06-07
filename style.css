@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.emoji {
+    font-size: 48px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.emoji-container {
+    display: none;
+}
+
+.emoji-container.hidden {
+    display: block;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+.fade-out {
+    animation: fade-out 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
